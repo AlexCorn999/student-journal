@@ -3,8 +3,8 @@ package main
 import (
 	"fmt"
 	"io"
+	"students/pkg/storage"
 	"students/pkg/student"
-	students_repo "students/pkg/student_repo"
 )
 
 func main() {
@@ -12,9 +12,9 @@ func main() {
 	var age int
 	var grade int
 
-	nineClass := students_repo.NewStudentsStorage()
+	nineClass := storage.NewStudentsStorage()
 	// к выпускному классу присваиваем 9 класс
-	var graduationClass students_repo.AllClasses = nineClass
+	var graduationClass storage.AllClasses = nineClass
 
 	for {
 		fmt.Print("Введите данные нового студента (Имя,Возраст,Оценку) :")

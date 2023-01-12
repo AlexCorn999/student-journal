@@ -1,11 +1,11 @@
-package students_repo
+package storage
 
 import (
 	"fmt"
 	"students/pkg/student"
 )
 
-// интерфейс представление класса школы у которого есть медоты:
+// интерфейс представление класса школы у которого есть методы:
 // вывести всех студентов, добавить нового студента и получить информацию о студенте.
 type AllClasses interface {
 	StudentsInfo()
